@@ -1,4 +1,4 @@
-# python_task0
+# python_task1
 1. Клонуємо репозиторій : git clone https...
 2. Переходимо до папки з файлами: cd python_task0/
 3. Додаємо файл task0.py: git add task0.py
