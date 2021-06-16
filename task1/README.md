@@ -8,5 +8,7 @@
 7. Завантажуємо дані: git push
 ![image](https://user-images.githubusercontent.com/85631158/122174700-99244880-ce8b-11eb-964a-12b5cc57955a.png)
 ![image](https://user-images.githubusercontent.com/85631158/122174712-9c1f3900-ce8b-11eb-8880-9f398daa3aa3.png)
+Приклад виконання колу в task1.py
+![image](https://user-images.githubusercontent.com/85631158/122176041-d5a47400-ce8c-11eb-9937-80018a250de0.png)
 
 
