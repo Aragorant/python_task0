@@ -4,29 +4,12 @@ from tkinter import *
 import sys
 
 
-conn = http.client.HTTPSConnection("vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com")
-
-headers = {
-    'x-rapidapi-key': "a0580e8b98mshde852a61dc71befp1f85d5jsne85be2246ec5",
-    'x-rapidapi-host': "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com"
-    }
-
-conn.request("GET", "/api/npm-covid-data/europe", headers=headers)
-
-res = conn.getresponse()
-data = res.read()
-
-val = data.decode("utf-8")
-
-print(val)
-
-
 win = tk.Tk()
 win.geometry(f"600x370+100+200")
 win.title("Task3")
 
 
-
+# Функція для отримання або оновлення інформації для 5-ох країн
 def update():
     conn = http.client.HTTPSConnection("vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com")
 
@@ -151,14 +134,14 @@ def update():
     
 
 
-
+#Створення кнопки для отримання або оновдення даних для 5-ох країн
 tk.Button(text='Update', bd=5,font=('Arial', 13), command=update).place(x=500, y=320)
 
 
 
 
 
-
+#функція для розміщення тексту
 def label(text):
     return Label(win, text=text,font=('Arial', 13), height=2)
 
@@ -190,6 +173,8 @@ label("Spain").grid(column=0, row=5)
 
 label("Click 'Update' to get or update data ").place(x=220, y=320)
 
+
+#функція для отримання інформації про країну, назву якої потрібно ввести в поле вводу
 def get():
     conn = http.client.HTTPSConnection("vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com")
 
@@ -260,10 +245,10 @@ def get():
     label('                 ').grid(column=5, row=6)
     label(Population(country)).grid(column=5, row=6)
     
-
+#Створення поле вводу
 ent = tk.Entry(win, justify=tk.LEFT, font=('Arial', 13), width=2)
 ent.insert(0, '')
 ent.grid(row=6,column=0, stick='we', padx=5)
 
-
+#створення кнопки для інформації про країну, назву якої потрібно ввести в поле вводу
 tk.Button(text='Get information', bd=5,font=('Arial', 13), command=get).place(x=10, y=320)
