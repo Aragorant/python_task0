@@ -1,4 +1,6 @@
 # python_task4
+Посилання на бота: https://t.me/task_4_1_bot
+
 ![image](https://user-images.githubusercontent.com/85631158/123258407-007d7080-d4fc-11eb-9643-c5249a033486.png)
 
 ![image](https://user-images.githubusercontent.com/85631158/123258443-0c693280-d4fc-11eb-87f9-c48edd3b3579.png)
